@@ -8,7 +8,6 @@
 #### Niagara login 
 ```
 ssh -Y raywoo32@niagara.scinet.utoronto.ca
-d3ti@l$OnD3m@nd
 ```
 
 ### Steps 
