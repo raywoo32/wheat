@@ -19,3 +19,9 @@ OVER 10mb
 scp /home/mobaxterm/Desktop/testSCP.txt raywoo32@nia-datamover1.scinet.utoronto.ca:/home/n/nprovart/raywoo32
 ```
 
+### Loading modules on scinet
+```
+module load gcc/7.3.0
+module load trinityrnaseq
+```
+
