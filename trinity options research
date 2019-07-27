@@ -1,0 +1,8 @@
+# Information about trinity options 
+
+## Initial Reading
+[about fastq files](https://support.illumina.com/bulletins/2016/04/fastq-files-explained.html)
+
+## Can Trinity be run on zipped files? 
+
+module restore trinity  
