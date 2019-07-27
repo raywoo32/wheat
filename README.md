@@ -1,4 +1,4 @@
-# Code walk through for running RNA-seq on scinet super computer 
+# Code walk through for running RNA-seq on scinet niagara
 #### Please see other .md files for notes on specific topics 
 
 ### Logging into Niagara 
@@ -24,4 +24,3 @@ scp /home/mobaxterm/Desktop/testSCP.txt raywoo32@nia-datamover1.scinet.utoronto.
 module load gcc/7.3.0
 module load trinityrnaseq
 ```
-
