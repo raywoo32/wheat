@@ -1,21 +1,42 @@
-### Read num
+# Fatal Error, Data  corrupted (Read num) 
+
+### Mapping was wrong on star, retry
+
+```bash
+EXITING because of FATAL ERROR: Read1 and Read2 are not consistent, reached the end of the one before the other one
+SOLUTION: Check you your input files: they may be corrupted
+```
+
+#### Mutant on scinet 
+```bash
 raywoo32@nia-login02:~/Data$ zcat 104_RNA_R1.fastq.gz | echo $((`wc -l`/4))
 162354528
 
-zcat 104_RNA_R2.fastq.gz | echo $((`wc -l`/4))
+raywoo32@nia-login02:~/Data$zcat 104_RNA_R2.fastq.gz | echo $((`wc -l`/4))
 gzip: 104_RNA_R2.fastq.gz: invalid compressed data--crc error
 84713262
+```
 
+#### Mutant on Bar - transfer error?
+```bash
+rwoo@bar:/DATA/Eddi/Wheat$ zcat 104_RNA_R2.fastq.gz | echo $((`wc -l`/4))
+gzip: 104_RNA_R2.fastq.gz: invalid compressed data--crc error
+84713262
+```
+- Wrong read number (diff from paired and invalid data) 
+
+#### Validate WT
+```bash
 raywoo32@nia-login02:~/Data$ zcat WT_RNA_R1.fastq.gz | echo $((`wc -l`/4))
 109500303
-
-zcat 104_RNA_R2.fastq.gz | echo $((`wc -l`/4))
-gzip: 104_RNA_R2.fastq.gz: invalid compressed data--crc error
-84713262
-
-
 rwoo@bar:/DATA/Eddi/Wheat$ zcat WT_RNA_R2.fastq.gz | echo $((`wc -l`/4))
 109500303
+```
+
+
+
+
+
 
 
 #Prepping Bam File:
