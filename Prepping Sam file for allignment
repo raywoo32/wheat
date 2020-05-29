@@ -1,3 +1,23 @@
+### Read num
+raywoo32@nia-login02:~/Data$ zcat 104_RNA_R1.fastq.gz | echo $((`wc -l`/4))
+162354528
+
+zcat 104_RNA_R2.fastq.gz | echo $((`wc -l`/4))
+gzip: 104_RNA_R2.fastq.gz: invalid compressed data--crc error
+84713262
+
+raywoo32@nia-login02:~/Data$ zcat WT_RNA_R1.fastq.gz | echo $((`wc -l`/4))
+109500303
+
+zcat 104_RNA_R2.fastq.gz | echo $((`wc -l`/4))
+gzip: 104_RNA_R2.fastq.gz: invalid compressed data--crc error
+84713262
+
+
+rwoo@bar:/DATA/Eddi/Wheat$ zcat WT_RNA_R2.fastq.gz | echo $((`wc -l`/4))
+109500303
+
+
 #Prepping Bam File:
 
 ### Prep environment (niagara scinet)
