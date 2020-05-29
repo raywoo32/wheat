@@ -33,10 +33,23 @@ rwoo@bar:/DATA/Eddi/Wheat$ zcat WT_RNA_R2.fastq.gz | echo $((`wc -l`/4))
 109500303
 ```
 
+### Downloading fastqc to validate 
 
+installation 
+```
+wget https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.9.zip 
+unzip 
+./fastqc
+No X11 DISPLAY variable was set, but this program performed an operation which r                                                                             equires it.
+```
+(fix display solution putty)[https://blogs.oracle.com/r/howto:-x11-forwarding-for-oracle-r-enterprise]
 
-
-
+running fastqc
+```
+cd FastQC
+module load java
+./fastqc /home/n/nprovart/raywoo32/Data/104_RNA_R1.fastq.gz /home/n/nprovart/raywoo32/Data/104_RNA_R2.fastq.gz 
+```
 
 
 #Prepping Bam File:
