@@ -1,4 +1,4 @@
-# Fatal Error, Data  corrupted (Read num) 
+# Getting Clean data and Bam file usage
 
 ### Mapping was wrong on star, retry
 
