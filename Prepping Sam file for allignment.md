@@ -50,6 +50,12 @@ cd FastQC
 module load java
 ./fastqc /home/n/nprovart/raywoo32/Data/104_RNA_R1.fastq.gz /home/n/nprovart/raywoo32/Data/104_RNA_R2.fastq.gz 
 ```
+### Got new original file 
+cat 104_RNA_R2.fastq | echo $((`wc -l`/4))
+162354528
+- matches other file! 162354528 :) 
+- TODO: continue with STAR
+
 
 
 #Prepping Bam File:
