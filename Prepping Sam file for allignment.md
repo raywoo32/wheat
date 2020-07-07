@@ -88,7 +88,8 @@ unsure about how to check if "properly paired"
 [Error 1](http://seqanswers.com/forums/showthread.php?t=9421) 
 TODO: 
 - make dict
-- merge files
+- change .fasta to .fa
+- remake star with new reference
 
 ```
 #!/bin/bash
