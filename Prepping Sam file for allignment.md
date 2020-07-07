@@ -101,6 +101,8 @@ module load gcc
 java -jar /scratch/n/nprovart/raywoo32/software/Picard/picard.jar MergeBamAlignment ALIGNED=/scratch/n/nprovart/raywoo32/Aligned.out.sam  UNMAPPED=/scratch/n/nprovart/raywoo32/unmapped.bam O=./merge_alignments.bam  R=/home/n/nprovart/raywoo32/Data/Assembled_Transcripts_Wheat_WT.fasta  
 ```
 
+cat Assembled_Transcripts_Wheat_WT.fasta | sed 's/>TRINITY_/>/g' | 's/len=.//g'
+
 ## References 
 1. [general reading](https://www.researchgate.net/post/Is_it_possible_to_generate_vcf_files_from_FASTQ_files_of_an_RNA-Seq_run)
 2. [samtools tutorial](http://quinlanlab.org/tutorials/samtools/samtools.html)
