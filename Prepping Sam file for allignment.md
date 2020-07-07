@@ -84,6 +84,12 @@ ls
 unsure about how to check if "properly paired"
 
 ## Mergebam allignments
+
+[Error 1](http://seqanswers.com/forums/showthread.php?t=9421) 
+TODO: 
+- make dict
+- merge files
+
 ```
 #!/bin/bash
 #!/bin/bash
