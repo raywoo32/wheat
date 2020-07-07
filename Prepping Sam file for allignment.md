@@ -83,6 +83,11 @@ ls
 ##### Notes:
 unsure about how to check if "properly paired"
 
+#### Unmapped Reads:
+```
+samtools view -f 4 yourbamfile.bam
+```
+
 ## Mergebam allignments
 
 [Error 1](http://seqanswers.com/forums/showthread.php?t=9421) 
