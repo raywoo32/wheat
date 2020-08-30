@@ -1,26 +1,22 @@
-# Code walk through for running RNA-seq on scinet niagara
-#### Please see other .md files for notes on specific topics 
+# Trinity, Mapping and Variant Calling 
 
-### Logging into Niagara 
-```
-ssh -Y raywoo32@niagara.scinet.utoronto.ca
-```
+## About
 
-### File Transfer on Niagara 
-[main ref](https://docs.scinet.utoronto.ca/index.php/Data_Management#Moving_data) 
+Took place on Scinet's [Niagara](https://docs.scinet.utoronto.ca/index.php/Niagara_Quickstart)
 
-UNDER 10mb
-```
-scp /home/mobaxterm/Desktop/testSCP.txt raywoo32@niagara.scinet.utoronto.ca:/home/n/nprovart/raywoo32/
-```
+Software Tools Used: 
+1. Samtools 
+2. GATK/Picard
+3. TrinityRNA seq 
+4. Linus Tools
+*** Usage examples in ./goodJobscripts
 
-OVER 10mb
-```
-scp /home/mobaxterm/Desktop/testSCP.txt raywoo32@nia-datamover1.scinet.utoronto.ca:/home/n/nprovart/raywoo32
-```
+### Step 1: Trinity RNA seq
 
-### Loading modules on scinet
-```
-module load gcc/7.3.0
-module load trinityrnaseq
-```
+### Step 2: WT to generated genome
+
+### Step 3: Generating a vcf file 
+
+
+2. [samtools tutorial](http://quinlanlab.org/tutorials/samtools/samtools.html)
+3. [GATK best practises PREPROCESSING for RNAseq data](https://gatk.broadinstitute.org/hc/en-us/articles/360035531192-RNAseq-short-variant-discovery-SNPs-Indels-)
