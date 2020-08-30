@@ -91,4 +91,3 @@ need at least 250GB, can run on second laptop, mac (if too slow look into diag a
 ## installation 2
 1. install cmake [here](https://www.google.com/search?client=firefox-b-d&q=install+cmake+command+line+mac#kpvalbx=1)
 2. [bioconda](https://anaconda.org/bioconda/trinity)
-## CONCLUSION: 
