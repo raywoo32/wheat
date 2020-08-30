@@ -2,6 +2,12 @@
 
 ## About
 
+- Library prep was done using the NEBNExt poly(A) mRNA protocol - sequenced in 1 lane, high throughput flowcell, 2x126-bases
+- Done at SickKids HiSeq2500
+- Wheat cultivar is called AC Taber.
+
+
+
 Took place on Scinet's [Niagara](https://docs.scinet.utoronto.ca/index.php/Niagara_Quickstart)
 Also see ./Niagara .md
 
