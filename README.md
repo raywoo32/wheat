@@ -18,6 +18,5 @@ Software Tools Used:
 
 [WORKFLOW](https://gatk.broadinstitute.org/hc/en-us/articles/360035531192-RNAseq-short-variant-discovery-SNPs-Indels-)
 
-
-
+For my write-up please see: ./GATKbestPrac.md
 
