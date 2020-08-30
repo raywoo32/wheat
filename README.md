@@ -6,7 +6,10 @@
 - Done at SickKids HiSeq2500
 - Wheat cultivar is called AC Taber.
 
+TODO: Use WT and mutant samples to identify SNPs in the mutant maybe using this kind of strategy:
 
+1. de novo assemble transcripts from WT using Trinity
+2. map with mutant reads to the de novo assembled transcripts and then do variant calling 
 
 Took place on Scinet's [Niagara](https://docs.scinet.utoronto.ca/index.php/Niagara_Quickstart)
 Also see ./Niagara .md
