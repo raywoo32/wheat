@@ -1,5 +1,12 @@
 # Trinity, Mapping and Variant Calling 
 
+## DATA NOTES
+
+Main generated file: /scratch/n/nprovart/raywoo32/DATA/HaplotypeCaller
+Best Data: /scratch/n/nprovart/raywoo32/DATA
+
+PLEASE NOTE IT IS IN SCRATCH AND THUS NOT BACKED UP! 
+
 ## About
 
 - Library prep was done using the NEBNExt poly(A) mRNA protocol - sequenced in 1 lane, high throughput flowcell, 2x126-bases
