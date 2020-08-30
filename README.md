@@ -2,8 +2,8 @@
 
 ## DATA NOTES
 
-Main generated file: /scratch/n/nprovart/raywoo32/DATA/HaplotypeCaller
-Best Data: /scratch/n/nprovart/raywoo32/DATA
+- Main generated file: /scratch/n/nprovart/raywoo32/DATA/HaplotypeCaller
+- Best Data: /scratch/n/nprovart/raywoo32/DATA
 
 PLEASE NOTE IT IS IN SCRATCH AND THUS NOT BACKED UP! 
 
