@@ -1,0 +1,43 @@
+Jul 31 12:57:02 ..... started STAR run
+Jul 31 12:57:03 ..... loading genome
+Jul 31 12:57:24 ..... started 1st pass mapping
+Jul 31 14:17:46 ..... finished 1st pass mapping
+Jul 31 14:17:55 ..... inserting junctions into the genome indices
+Jul 31 14:18:13 ..... started mapping
+Jul 31 15:46:09 ..... finished successfully
+
+scontrol show jobid 3831284
+JobId=3831284 JobName=starMapWithin
+   UserId=raywoo32(3084743) GroupId=nprovart(6005943) MCS_label=N/A
+   Priority=2473863 Nice=0 Account=def-nprovart QOS=normal
+   JobState=COMPLETING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=02:49:08 TimeLimit=16:00:00 TimeMin=N/A
+   SubmitTime=2020-07-31T12:52:02 EligibleTime=2020-07-31T12:52:02
+   AccrueTime=2020-07-31T12:52:02
+   StartTime=2020-07-31T12:57:01 EndTime=2020-07-31T15:46:09 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2020-07-31T12:57:01
+   Partition=compute AllocNode:Sid=nia-login05:281238
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=nia[0434-0435,0491-0492,0495-0496,0735-0736]
+   BatchHost=nia0434
+   NumNodes=8 NumCPUs=640 NumTasks=320 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   TRES=cpu=640,node=8,billing=320
+   Socks/Node=* NtasksPerN:B:S:C=40:0:*:* CoreSpec=*
+   MinCPUsNode=40 MinMemoryNode=0 MinTmpDiskNode=0
+   Features=[skylake|cascade] DelayBoot=00:00:00
+   OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null)
+   Command=/gpfs/fs0/scratch/n/nprovart/raywoo32/goodJobscripts/starMap2PassWithinRename.sh
+   WorkDir=/gpfs/fs0/scratch/n/nprovart/raywoo32/goodJobscripts
+   StdErr=/gpfs/fs0/scratch/n/nprovart/raywoo32/goodJobscripts/star_within_output_3831284.txt
+   StdIn=/dev/null
+   StdOut=/gpfs/fs0/scratch/n/nprovart/raywoo32/goodJobscripts/star_within_output_3831284.txt
+   Power=
+   MailUser=woorachels@gmail.com MailType=BEGIN,END,FAIL,REQUEUE,STAGE_OUT
+
+sacct -j 3831284
+       JobID    JobName    Account    Elapsed  MaxVMSize     MaxRSS  SystemCPU    UserCPU ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- ---------- ---------- -------- 
+3831284      starMapWi+ def-nprov+   02:49:08                        09:28.193   22:11:28      0:0 
+3831284.bat+      batch def-nprov+   02:49:08  62925408K  61170636K  09:28.192   22:11:28      0:0 
+3831284.ext+     extern def-nprov+   02:49:08    137232K       856K   00:00:00  00:00.005      0:0 
