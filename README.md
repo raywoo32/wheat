@@ -3,12 +3,13 @@
 ## About
 
 Took place on Scinet's [Niagara](https://docs.scinet.utoronto.ca/index.php/Niagara_Quickstart)
+Also see ./Niagara .md
 
 Software Tools Used: 
 1. Samtools 
 2. GATK/Picard
 3. TrinityRNA seq 
-4. Linus Tools
+4. Linux Tools
 *** Usage examples in ./goodJobscripts
 
 ### Step 1: Trinity RNA seq
