@@ -7,12 +7,25 @@
 
 #### Niagara login 
 ```
-ssh -Y raywoo32@niagara.scinet.utoronto.ca
+ssh -Y <USERNAME>@niagara.scinet.utoronto.ca
 ```
 
-### Steps 
-1. Login (Done) 
-2. Copy Data to Home directory in Niagara
-3. Confirm workflow through test on local 
-4. Submit batch job ```sbatch jobscript.sh```
-5. Ask scinet people about workflow (<support@scinet.utoronto.ca>)
+### File Transfer on Niagara 
+[main ref](https://docs.scinet.utoronto.ca/index.php/Data_Management#Moving_data) 
+
+UNDER 10mb
+```
+scp /home/mobaxterm/Desktop/testSCP.txt raywoo32@niagara.scinet.utoronto.ca:/home/n/nprovart/raywoo32/
+```
+
+OVER 10mb
+```
+scp /home/mobaxterm/Desktop/testSCP.txt raywoo32@nia-datamover1.scinet.utoronto.ca:/home/n/nprovart/raywoo32
+```
+
+### Loading modules on scinet
+```
+module load gcc/7.3.0
+module load trinityrnaseq
+```
+
